@@ -54,7 +54,6 @@ def xsort(point:list):
           dic[cnt] += 1
         except:
           dic[cnt] = 1
-  print(dic.values())
   for i in list(dic.values()):
     Li.append([])
     for j in range(i):
@@ -78,3 +77,5 @@ def main():
     print(i[0], i[1])
 
 main()
+
+#코드가 너무 더럽다 .. 나중에 정리해보자..
