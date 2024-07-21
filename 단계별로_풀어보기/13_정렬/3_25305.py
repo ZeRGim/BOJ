@@ -1,0 +1,5 @@
+N, k = map(int, input().split())
+Li=list(map(int, input().split()))
+Li.sort()
+Li.reverse()
+print(Li[k-1])
