@@ -46,12 +46,16 @@ def main():
   
   if moso and jaso:
     for i in list(jaso.keys()):
-      if moso[i] >= jaso[i]:
-        mo = mo // (i**jaso[i])
-        ja = ja // (i**jaso[i])
-      else:
-        mo = mo // (i**moso[i])
-        ja = ja // (i**moso[i])
+      try:
+        if moso[i] >= jaso[i]:
+          mo = mo // (i**jaso[i])
+          ja = ja // (i**jaso[i])
+        else:
+          mo = mo // (i**moso[i])
+          ja = ja // (i**moso[i])
+      except:
+        pass
+      # jaso에 있는 원소가 moso에 없을때 키에러 발생
   
   print(ja, mo)
   
