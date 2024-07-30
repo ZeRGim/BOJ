@@ -35,6 +35,8 @@ while True:
     if a < 0 or b < 0:
       res = False
       break
+  if a != 0 or b != 0:
+    res = False
   if res:
     print("yes")
   else:
